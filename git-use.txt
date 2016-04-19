@@ -2,5 +2,6 @@
 $ssh-keygen -t rsa -C "youremail@example.com"
 ## github创建ssh key
 
+## 配置github Push Credential Helper (On Windows)
 
 
