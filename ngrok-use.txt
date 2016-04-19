@@ -1,0 +1,9 @@
+1 Start by downloading ngrok.
+2 Install your authtoken
+ 	./ngrok authtoken 7fwgh8Uh1AighuSCUrSoy_2hggMHDU6mWScXoJbRhPk
+3 Create your first secure tunnel
+	./ngrok http 80
+4 Open the web interface at http://localhost:4040 to inspect and replay requests
+
+Read the documentation for instructions on advanced features like adding HTTP authentication, setting custom subdomains and more.
+

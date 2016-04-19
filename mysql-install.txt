@@ -1,0 +1,17 @@
+##MySQL版本 5.7.12-winx64
+##修改配置文件
+my-default.ini -> my.ini
+[mysqld]
+# These are commonly set, remove the # and set as required.
+basedir = D:/mysql-5.7.12-winx64
+datadir = D:/mysql-data
+
+##初始化数据
+c:\mysql\bin>mysqld --defaults-file=c:\mysql\my.ini --initialize --user=mysql --console
+
+##安装为Windows服务
+c:\mysql\bin>mysqld --install MySQL --defaults-file=c:\mysql\my.ini 
+
+##修改随机生成的root用户密码
+c:\mysql\bin>mysql -u root -p
+mysql>alter user root@localhost identified by '123456';

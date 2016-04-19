@@ -1,0 +1,22 @@
+### Redis On Windows (3.0.501 64 bit)
+c:\redis>redis-server.exe redis.conf
+c:\redis>redis-cli.exe -h 127.0.0.1 -p6379
+
+
+
+
+
+========================================================================
+### Redus On *nix
+
+
+
+
+
+
+
+
+
+
+
+
