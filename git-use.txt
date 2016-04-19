@@ -1,7 +1,12 @@
+#############################################
+##      Git Version 2.7.1.windows.2        ##
+#############################################
+
 ## 创建SSK Key (Windows git-bash下)
-$ssh-keygen -t rsa -C "youremail@example.com"
+$ ssh-keygen -t rsa -C "youremail@example.com"
 ## github创建ssh key
 
 ## 配置github Push Credential Helper (On Windows)
+$ git config --global credential.helper wincred
 
 
