@@ -1,0 +1,6 @@
+## 创建SSK Key (Windows git-bash下)
+$ssh-keygen -t rsa -C "youremail@example.com"
+## github创建ssh key
+
+
+
