@@ -1,0 +1,4 @@
+
+### Appender -- DailyRollingFileAppender
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.DailyRollingFileAppender.
