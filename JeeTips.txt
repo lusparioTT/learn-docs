@@ -1,0 +1,13 @@
+##MySQL数据类型对应Java类型##
+##These MySQL Data Types	Can always be converted to these Java types##
+-----------------------------------------------------------------------------------
+CHAR, VARCHAR, BLOB, TEXT, ENUM, and SET	
+java.lang.String, java.io.InputStream, java.io.Reader, java.sql.Blob, java.sql.Clob
+-----------------------------------------------------------------------------------
+FLOAT, REAL, DOUBLE PRECISION, NUMERIC, DECIMAL, TINYINT, SMALLINT, MEDIUMINT, INTEGER, BIGINT	
+java.lang.String, java.lang.Short, java.lang.Integer, java.lang.Long, java.lang.Double, java.math.BigDecimal
+-----------------------------------------------------------------------------------
+
+DATE, TIME, DATETIME, TIMESTAMP	
+java.lang.String, java.sql.Date, java.sql.Timestamp
+-----------------------------------------------------------------------------------
