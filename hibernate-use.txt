@@ -16,3 +16,16 @@ Hibernate关联关系映射目录
     ├─  一对多外键双向关联
     ├─  一对多连接表双向关联
     └─  多对多双向关联
+
+[用于属性注解]
+@ManyToOne
+@JoinColumn(name = "goodsid")
+@ForeignKey(name = "none")
+@NotFound(action = NotFoundAction.IGNORE)
+private Goods goods
+
+
+|-----------------------------------------------------------------------------|
+[HQL]
+1 ("from Entity e WHERE e.id = xxx") -> return List<Entity> 
+2 ("select e.id, e.name from Entity e WHERE e.id = xxx ") -> return List<Object>

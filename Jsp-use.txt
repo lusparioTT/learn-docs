@@ -1,0 +1,5 @@
+Java ServerPages(JSP)
+
+
+
+you can set an attribute in a servlet and read it from a JSP, can be used for any object, not just string. 

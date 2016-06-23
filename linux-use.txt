@@ -1,0 +1,12 @@
+##命令
+
+#统计当前目录下的文件个数
+	ls -l | wc -l
+#查看文件末尾行
+	tail -n [] [filename]
+#删除当前目录下全部文件
+	rm -rf .
+#列出端口下的进程
+	lsof -i:[port] 
+#备份文件
+	mv [filename] [filename]
