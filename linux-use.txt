@@ -10,3 +10,9 @@
 	lsof -i:[port] 
 #备份文件
 	mv [filename] [filename]
+##虚拟机网络配置
+NAT模式
+ 本地虚拟网卡 VMware Network Adapter VMnet8
+ IP地址设置 192.168.118.0 225.225.225.0 192.168.118.2
+ 虚拟机网卡设备（ethxxx|/etc/sysconfig/network-scripts/ifcfg-xxx） bootproto=static ipaddr=192.168.118.10 netmask=225.225.225.0 onboot=yes 
+ 网络设置(/etc/sysconfig/network) networking=yes hostname=localhost gateway=192.168.118.2 
