@@ -10,3 +10,25 @@
 	lsof -i:[port] 
 #备份文件
 	mv [filename] [filename]
+
+#cat /proc/version  
+#cat /etc/issue 
+#getconf LONG_BIT 
+
+-----------------
+vim编辑器
+
+复制行：yy 
+粘贴：p
+
+-----------------
+centos安装tomcat7.0.70
+1 wget apache-tomcat-7.0.70.tar.gz
+2 tar -xvfz apacche-tomcat-7.0.70.tar.gz
+3 mv /home/trux/apache-tomcat-7.0.70 /usr/local
+4 vi /etc/profile export CATALINA_HOME=/usr/local/apache-tomcat-7.0.70
+5 vi /etc/sysconfig/iptables 
+ ##加入一行：-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT 
+6 service iptables restart
+7 apache-tomcat-7.0.70/bin/startup.sh 
+8 lsof -i:8080

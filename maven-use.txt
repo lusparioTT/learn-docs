@@ -1,12 +1,12 @@
 ## Mvaven 帮助命令
-x:\> mvn -h
+mvn -h
 
 ## 将只有Mavne骨架的Maven工程转化成eclipse工程
-x:\> mvn eclipse:eclipse
+mvn eclipse:eclipse
 
 ## Maven依赖分析
-x:\> mvn dependency:tree 
+mvn dependency:tree 
 
-##  导出Maven依赖的jar包
-x:\> mvn dependency:copy-dependencies -DoutputDirectory=src/main/webapp/WEB-INF/lib -DincludeScope=compile
+## 将mavne项目依赖的Java库提取
+mvn dependency:copy-dependencies -DoutputDirectory=src/main/webapp/WEB-INF/lib -DincludeScope=compile
 
