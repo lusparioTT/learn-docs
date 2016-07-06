@@ -1,5 +1,5 @@
+-----------------------------------------------------------------------------------------
 ##命令
-
 #统计当前目录下的文件个数
 	ls -l | wc -l
 #查看文件末尾行
@@ -15,13 +15,13 @@
 #cat /etc/issue 
 #getconf LONG_BIT 
 
------------------
+-----------------------------------------------------------------------------------------
 vim编辑器
 
 复制行：yy 
 粘贴：p
 
------------------
+-----------------------------------------------------------------------------------------
 centos安装tomcat7.0.70
 1 wget apache-tomcat-7.0.70.tar.gz
 2 tar -xvfz apacche-tomcat-7.0.70.tar.gz
@@ -32,3 +32,11 @@ centos安装tomcat7.0.70
 6 service iptables restart
 7 apache-tomcat-7.0.70/bin/startup.sh 
 8 lsof -i:8080
+----------------------------------------------------------------------------------------
+##虚拟机网络配置
+NAT模式
+ 本地虚拟网卡 VMware Network Adapter VMnet8
+ IP地址设置 192.168.118.0 225.225.225.0 192.168.118.2
+ 虚拟机网卡设备（ethxxx|/etc/sysconfig/network-scripts/ifcfg-xxx） bootproto=static ipaddr=192.168.118.10 netmask=225.225.225.0 onboot=yes 
+ 网络设置(/etc/sysconfig/network) networking=yes hostname=localhost gateway=192.168.118.2 
+
