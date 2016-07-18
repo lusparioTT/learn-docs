@@ -9,4 +9,8 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 ## 配置github Push Credential Helper (On Windows)
 $ git config --global credential.helper wincred
 
-
+1 本地初始化git仓库 推送到github已存在的仓库
+  ① git init
+  ② git remote add origin git@github.com:timgise/HTML+JS+CSS.git
+  ③ git pull origin master与本地合并 
+  ④ git add/commit/push 
