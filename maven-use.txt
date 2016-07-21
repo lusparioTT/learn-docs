@@ -1,12 +1,14 @@
-## Mvaven 帮助命令
-mvn -h
+Mvaven 帮助命令
+	mvn -h
 
-## 将只有Mavne骨架的Maven工程转化成eclipse工程
-mvn eclipse:eclipse
+1、将只有Mavne骨架的Maven工程转化成eclipse工程
+	mvn eclipse:eclipse
 
-## Maven依赖分析
-mvn dependency:tree 
+2、Maven依赖分析
+	mvn dependency:tree 
 
-## 将mavne项目依赖的Java库提取
-mvn dependency:copy-dependencies -DoutputDirectory=src/main/webapp/WEB-INF/lib -DincludeScope=compile
+3、将mavne项目依赖的Java库提取
+	mvn dependency:copy-dependencies -DoutputDirectory=src/main/webapp/WEB-INF/lib -DincludeScope=compile
 
+4、将jar文件安装到本地maven仓库
+	mvn install:install-file -Dfile=classes12_g.jar -DgroupId=com.oracle -DartifactId=oracle -Dversion=10.2.0.2.0 -Dpackaging=jar -DgeneratePom=true
