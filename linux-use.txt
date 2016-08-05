@@ -40,3 +40,11 @@ NAT模式
  虚拟机网卡设备（ethxxx|/etc/sysconfig/network-scripts/ifcfg-xxx） bootproto=static ipaddr=192.168.118.10 netmask=225.225.225.0 onboot=yes 
  网络设置(/etc/sysconfig/network) networking=yes hostname=localhost gateway=192.168.118.2 
 
+#安装RabbitMQ
+	环境：CentOS Linux release 7.2.1511 (Core)
+	1 安装Erlang（Install Erlang Form EPEL Repository）-- 安装EPEL : yum install -y epel-release
+		yum install erlang 
+	2 下载rpm包
+		wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.4/rabbitmq-server-3.6.4-1.noarch.rpm
+	3 安装rabbitmq-server
+		yum install rabbitmq-server-3.6.4-1.noarch.rpm
