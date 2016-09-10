@@ -25,3 +25,12 @@ $ git config --global credential.helper wincred
   ④ git add/commit/push 
 
 3 git分支
+  ① 创建本地分支(dev) git branch dev
+  ② 切换到dev分支 git checkout dev
+    合并上面两步 git checkout -b dev
+  ③ 分支开发提交 git add/commit 
+  ④ 分支合并到master分支 git checkout master / git merge dev
+  ⑤ 推送本地分支dev到远程仓库 git push -u origin dev
+4 git标签（tag）
+
+  
